@@ -1,28 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "URL Shortener",
-    "version": "1.0",
-    "description": "A simple URL shortener Chrome extension.",
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
-    }
-  },
-  "icons": {
+  "manifest_version": 3,
+  "name": "URL Shortener",
+  "version": "1.0",
+  "description": "A simple URL shortener Chrome extension.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
-  },
-  "permissions": [],
-  "host_permissions": [],
-  "web_accessible_resources": [
-    {
-      "resources": ["extension/static/*", "images/*", "icon.png"],
-      "matches": ["<all_urls>"]
-    }
-  ]
   }
-  
+},
+"icons": {
+  "16": "icon.png",
+  "48": "icon.png",
+  "128": "icon.png"
+},
+"permissions": [],
+"host_permissions": [],
+"web_accessible_resources": [
+  {
+    "resources": ["extension/static/*", "images/*", "icon.png"],
+    "matches": ["<all_urls>"]
+  }
+]
+}
