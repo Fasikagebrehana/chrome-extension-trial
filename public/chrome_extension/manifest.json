@@ -5,8 +5,24 @@
     "description": "A simple URL shortener Chrome extension.",
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "icon.jpeg"
-    },
-    "permissions": ["storage"]
+      "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "host_permissions": [],
+  "web_accessible_resources": [
+    {
+      "resources": ["extension/static/*", "images/*", "icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
   }
   
